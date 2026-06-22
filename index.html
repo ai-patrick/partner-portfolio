@@ -1,0 +1,610 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Forge · Systems Architecture & Engineering</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..400;1,9..144,300&family=JetBrains+Mono:wght@300;400;500&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="grain"></div>
+
+  <!-- ═══════════ TOPBAR ═══════════ -->
+  <header class="topbar">
+    <div class="topbar__inner">
+      <a href="#top" class="brand">
+        <span class="brand__mark"></span>
+        <span class="brand__name">The Forge</span>
+      </a>
+      <nav class="nav">
+<a href="#domains" class="link">Domains</a>
+<a href="#team" class="link">Team</a>
+<a href="#process" class="link">Process</a>
+<a href="#intake" class="link">Intake</a>
+      </nav>
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
+        <span></span>
+      </button>
+      <button class="telemetry-toggle" id="telemetryToggle" aria-label="Toggle runtime simulation">
+        <span class="telemetry-toggle__icon">
+          <svg width="14" height="14" viewBox="0 0 14 14">
+            <rect x="2" y="2" width="4" height="4" fill="currentColor" />
+            <rect x="8" y="2" width="4" height="4" fill="currentColor" opacity="0.5" />
+            <rect x="2" y="8" width="4" height="4" fill="currentColor" opacity="0.5" />
+            <circle class="pulse-node" cx="10" cy="10" r="2" fill="var(--terracotta)" />
+          </svg>
+        </span>
+        <span class="telemetry-toggle__label" id="telemetryLabel">Matrix · Idle</span>
+      </button>
+    </div>
+  </header>
+  <nav class="mobile-nav" id="mobileNav">
+    <a href="#domains" class="link">Domains</a>
+<a href="#team" class="link">Team</a>
+    <a href="#process" class="link">Process</a>
+    <a href="#intake" class="link">Intake</a>
+  </nav>
+
+  <!-- ═══════════ HERO ═══════════ -->
+  <section class="hero" id="top">
+    <div class="hero__media">
+      <div class="hero__img-wrap">
+        <img src="https://images.unsplash.com/photo-1607799279861-4dd421887fb3?q=80&w=2400&auto=format&fit=crop"
+          alt="Prismatic ambient light on a minimalist server stack terminal layout">
+      </div>
+      <div class="hero__veil"></div>
+      <div class="hero__beam"></div>
+    </div>
+    <div class="hero__content">
+      <div class="hero__breath-row fade-up">
+        <span class="hero__breath-label">system.ready</span>
+        <span class="hero__breath-block"></span>
+      </div>
+      <div class="hero__label fade-up delay-1">Independent Engineering Studio</div>
+      <h1 class="hero__title fade-up delay-2">We Design and Engineer<br>AI Systems, Digital Products,<br>and Blockchain Infrastructure.</h1>
+      <p class="hero__tag fade-up delay-3">A multidisciplinary team of three engineers building intelligent software, scalable platforms, and modern digital experiences.</p>
+      <a href="#selected-work" class="hero__cta fade-up delay-4"><span>View Selected Work</span></a>
+      <a href="#intake" class="hero__cta fade-up delay-5"><span>Start a Project</span></a>
+    </div>
+    <div class="hero__scroll fade-up delay-4">
+      <span>scroll</span>
+      <div class="hero__scrollline"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════ SELECTED WORK ═══════════ -->
+<section class="practices" id="selected-work">
+  <div class="grid-underlay"></div>
+  <div class="section-head fade-up">
+    <span class="section-label">Selected Work</span>
+    <h2 class="section-title">Systems designed for<br>real‑world impact.</h2>
+  </div>
+  <div class="practices__grid fade-up delay-1">
+    <div class="practice">
+      <div class="practice__num">01</div>
+      <h3 class="practice__name">Sharp Engine</h3>
+      <p class="practice__desc">A high‑performance transaction engine for DeFi protocols, delivering sub‑millisecond order execution.</p>
+      <div class="practice__meta">
+        <span>React · Node.js · PostgreSQL</span>
+        <span>50k+ Transactions</span>
+      </div>
+      <a class="practice__cta" href="#">View Case Study →</a>
+    </div>
+    <div class="practice">
+      <div class="practice__num">02</div>
+      <h3 class="practice__name">LuxerSuite</h3>
+      <p class="practice__desc">Enterprise asset‑management platform with granular access control and real‑time analytics.</p>
+      <div class="practice__meta">
+        <span>Next.js · TypeScript · Redis</span>
+        <span>99.9 % Uptime</span>
+      </div>
+      <a class="practice__cta" href="#">View Case Study →</a>
+    </div>
+    <div class="practice">
+      <div class="practice__num">03</div>
+      <h3 class="practice__name">EventSphere</h3>
+      <p class="practice__desc">Scalable event streaming service supporting high‑throughput, low‑latency data pipelines.</p>
+      <div class="practice__meta">
+        <span>Kafka · Spark · Python</span>
+        <span>3 AI Models</span>
+      </div>
+      <a class="practice__cta" href="#">View Case Study →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ CAPABILITIES ═══════════ -->
+<section class="practices" id="capabilities">
+  <div class="grid-underlay"></div>
+  <div class="section-head fade-up">
+    <span class="section-label">Capabilities</span>
+    <h2 class="section-title">Three disciplines.<br>One engineering practice.</h2>
+  </div>
+  <div class="practices__grid fade-up delay-1">
+    <div class="practice">
+      <h3 class="practice__name">AI Systems</h3>
+      <p class="practice__desc">Machine Learning, LLM Integration, Data Pipelines, Intelligent Automation, Software Platforms.</p>
+    </div>
+    <div class="practice">
+      <h3 class="practice__name">Software Platforms</h3>
+      <p class="practice__desc">Web Applications, SaaS Products, Backend Architecture, APIs.</p>
+    </div>
+    <div class="practice">
+      <h3 class="practice__name">Blockchain Infrastructure</h3>
+      <p class="practice__desc">Smart Contracts, DeFi Systems, Wallet Integration, On‑chain Analytics.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ CORE TRACKS ═══════════ -->
+  <section class="practices" id="domains">
+    <div class="grid-underlay"></div>
+    <div class="section-head fade-up">
+      <span class="section-label">01 // Architectural Focus</span>
+      <h2 class="section-title">Clean engineering infrastructure layers, <em>isolated with absolute precision.</em></h2>
+      <p class="section-lead">We reject the bloat of fast-and-loose tech stacks. Our engineering execution models
+        operate cleanly within deliberate performance bounds.</p>
+    </div>
+
+    <div class="practices__grid fade-up delay-1">
+      <div class="practice">
+        <div class="practice__num">NODE_01</div>
+        <h3 class="practice__name">Systems<br>Automation</h3>
+        <div class="practice__sub">Low-Level Isolation &amp; Environment Anchoring</div>
+        <p class="practice__desc">Hardened infrastructure provisioning, zero-trust security architectures, and
+          autonomous system orchestration for mission-critical deployments.</p>
+        <div class="practice__meta">
+          <span>Ansible · Terraform</span>
+          <span>Zero-Trust Networks</span>
+          <span>CI/CD Pipelines</span>
+        </div>
+      </div>
+
+      <div class="practice">
+        <div class="practice__num">NODE_02</div>
+        <h3 class="practice__name">Full-Stack<br>Infrastructure</h3>
+        <div class="practice__sub">Deterministic Application Matrices</div>
+        <p class="practice__desc">End-to-end application architecture from database design through API layers to
+          pixel-precise frontend systems with sub-second response times.</p>
+        <div class="practice__meta">
+          <span>React · Next.js</span>
+          <span>PostgreSQL · Redis</span>
+          <span>Microservice Orchestration</span>
+        </div>
+      </div>
+
+      <div class="practice">
+        <div class="practice__num">NODE_03</div>
+        <h3 class="practice__name">Data Pipelines<br>&amp; Analytics</h3>
+        <div class="practice__sub">Distributed Communication &amp; Cloud Mapping</div>
+        <p class="practice__desc">High-throughput data ingestion, transformation, and warehousing systems with real-time
+          analytics dashboards and ML-ready feature stores.</p>
+        <div class="practice__meta">
+          <span>Apache Airflow · dbt</span>
+          <span>AWS / GCP Cloud</span>
+          <span>Stream Processing</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ OPERATORS ═══════════ -->
+  <section class="teachers" id="team">
+    <div class="section-head fade-up">
+      <span class="section-label">02 // Engineering Team</span>
+      <h2 class="section-title">The engineering group tracking <em>every operational line.</em></h2>
+      <p class="section-lead">Three developers writing deliberate, audited code with deep specialization fields across
+        low-level runtimes, complex UI engines, and data streaming lanes.</p>
+    </div>
+
+    <div class="teachers__grid fade-up delay-1">
+      <!-- Operator 1 -->
+      <div class="teacher"
+        data-quote="I build secure software distributions using hardened local loops and clear terminal architecture. If a tool cannot run safely inside a clean sandboxed shell, it doesn't belong in production.">
+        <div class="teacher__photo">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=600&auto=format&fit=crop"
+            alt="P. Kilonzo Mbithi">
+        </div>
+        <div class="teacher__body">
+          <h3 class="teacher__name">P. Kilonzo Mbithi</h3>
+          <div class="teacher__role">Systems &amp; Security Specialist</div>
+          <div class="teacher__stack">
+            <div class="teacher__stack-row">
+              <span class="label">Shell / Bash</span>
+              <span class="bars">████████░░</span>
+            </div>
+            <div class="teacher__stack-row">
+              <span class="label">Terraform / Pulumi</span>
+              <span class="bars">█████████░</span>
+            </div>
+            <div class="teacher__stack-row">
+              <span class="label">Network Security</span>
+              <span class="bars">██████████</span>
+            </div>
+            <div class="teacher__stack-row">
+              <span class="label">Kernel Tuning</span>
+              <span class="bars">████████░░</span>
+            </div>
+          </div>
+          <div class="teacher__details">
+            <p class="teacher__expertise"><strong>Expertise:</strong> Security Engineering, Systems Automation, Machine Learning</p>
+            <p class="teacher__stack"><strong>Primary Stack:</strong> Shell, Terraform, Network Security, Kernel Tuning</p>
+            <p class="teacher__links"><a href="#" target="_blank" class="link">GitHub</a> • <a href="#" target="_blank" class="link">LinkedIn</a> • <a href="mailto:p.kilonzo@example.com" class="link">Email</a></p>
+            <p class="teacher__philosophy">Design systems that outlive trends.</p>
+          </div>
+          <div class="teacher__quote-wrap">
+            <div class="teacher__prompt"></div>
+            <div class="teacher__quote"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Operator 2 -->
+      <div class="teacher"
+        data-quote="My focus is the mechanical translation between structural data layers and dynamic interfaces. I design high-density rendering models that preserve speed without introducing layout chaos.">
+        <div class="teacher__photo">
+          <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=600&auto=format&fit=crop"
+            alt="Patrick Kiama">
+        </div>
+        <div class="teacher__body">
+          <h3 class="teacher__name">Patrick Kiama</h3>
+          <div class="teacher__role">Full-Stack Infrastructure Engineer</div>
+          <div class="teacher__stack">
+            <div class="teacher__stack-row">
+              <span class="label">React / Next.js</span>
+              <span class="bars">█████████░</span>
+            </div>
+            <div class="teacher__stack-row">
+              <span class="label">Node.js / Python</span>
+              <span class="bars">████████░░</span>
+            </div>
+            <div class="teacher__stack-row">
+              <span class="label">PostgreSQL / Redis</span>
+              <span class="bars">█████████░</span>
+            </div>
+            <div class="teacher__stack-row">
+              <span class="label">System Design</span>
+              <span class="bars">██████████</span>
+            </div>
+          </div>
+          <div class="teacher__details">
+            <p class="teacher__expertise"><strong>Expertise:</strong> Security Engineering, Systems Automation, Machine Learning</p>
+            <p class="teacher__stack"><strong>Primary Stack:</strong> Shell, Terraform, Network Security, Kernel Tuning</p>
+            <p class="teacher__links"><a href="#" target="_blank" class="link">GitHub</a> • <a href="#" target="_blank" class="link">LinkedIn</a> • <a href="mailto:p.kilonzo@example.com" class="link">Email</a></p>
+            <p class="teacher__philosophy">Design systems that outlive trends.</p>
+          </div>
+          <div class="teacher__quote-wrap">
+            <div class="teacher__prompt"></div>
+            <div class="teacher__quote"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Operator 3 -->
+      <div class="teacher"
+        data-quote="Telemetry is structural conversation. I map multi-channel cloud integrations, geolocation streaming matrices, and distributed alerting relays that achieve complete fault tolerance.">
+        <div class="teacher__photo">
+          <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=600&auto=format&fit=crop"
+            alt="C. Jatelo Omondi">
+        </div>
+        <div class="teacher__body">
+          <h3 class="teacher__name">C. Jatelo Omondi</h3>
+          <div class="teacher__role">Data Pipelines &amp; Cloud Architect</div>
+          <div class="teacher__stack">
+            <div class="teacher__stack-row">
+              <span class="label">Airflow / dbt</span>
+              <span class="bars">█████████░</span>
+            </div>
+            <div class="teacher__stack-row">
+              <span class="label">AWS / GCP</span>
+              <span class="bars">██████████</span>
+            </div>
+            <div class="teacher__stack-row">
+              <span class="label">Spark / Kafka</span>
+              <span class="bars">████████░░</span>
+            </div>
+            <div class="teacher__stack-row">
+              <span class="label">Analytics Eng.</span>
+              <span class="bars">█████████░</span>
+            </div>
+          </div>
+          <div class="teacher__details">
+            <p class="teacher__expertise"><strong>Expertise:</strong> Security Engineering, Systems Automation, Machine Learning</p>
+            <p class="teacher__stack"><strong>Primary Stack:</strong> Shell, Terraform, Network Security, Kernel Tuning</p>
+            <p class="teacher__links"><a href="#" target="_blank" class="link">GitHub</a> • <a href="#" target="_blank" class="link">LinkedIn</a> • <a href="mailto:p.kilonzo@example.com" class="link">Email</a></p>
+            <p class="teacher__philosophy">Design systems that outlive trends.</p>
+          </div>
+          <div class="teacher__quote-wrap">
+            <div class="teacher__prompt"></div>
+            <div class="teacher__quote"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- ═══════════ INFRASTRUCTURE ═══════════ -->
+<section class="practices" id="infrastructure">
+  <div class="grid-underlay"></div>
+  <div class="section-head fade-up">
+    <span class="section-label">Infrastructure</span>
+    <h2 class="section-title">Built with proven tools.</h2>
+  </div>
+  <div class="practices__grid fade-up delay-1">
+    <div class="practice"><h3 class="practice__name">Frontend</h3><p class="practice__desc">React · Next.js · Tailwind · TypeScript</p></div>
+    <div class="practice"><h3 class="practice__name">Backend</h3><p class="practice__desc">Node.js · Express · PostgreSQL · Redis</p></div>
+    <div class="practice"><h3 class="practice__name">AI</h3><p class="practice__desc">Python · TensorFlow · OpenAI · PyTorch</p></div>
+    <div class="practice"><h3 class="practice__name">Blockchain</h3><p class="practice__desc">Solidity · Hardhat · Ethers.js · Web3.js</p></div>
+    <div class="practice"><h3 class="practice__name">Cloud</h3><p class="practice__desc">Docker · Linux · AWS · GitHub Actions</p></div>
+  </div>
+</section>
+
+<!-- ═══════════ ENGAGEMENT PROCESS ═══════════ -->
+<section class="schedule" id="process">
+  <div class="grid-underlay"></div>
+  <div class="section-head fade-up">
+    <span class="section-label">Engagement Process</span>
+    <h2 class="section-title">From insight to launch.</h2>
+    <p class="section-lead">Our disciplined workflow ensures reliable, high‑impact solutions.</p>
+  </div>
+  <div class="schedule__list fade-up delay-1">
+    <div class="sched-day-header">
+      <div>Phase</div>
+      <div>Description</div>
+    </div>
+    <div class="sched-row">
+      <div class="sched-row__main">
+        <div class="sched-day">01 Discovery</div>
+        <div class="sched-time">Understanding goals and constraints.</div>
+        <div></div><div></div><div></div><div></div>
+      </div>
+    </div>
+    <div class="sched-row">
+      <div class="sched-row__main">
+        <div class="sched-day">02 Architecture</div>
+        <div class="sched-time">Designing systems and workflows.</div>
+        <div></div><div></div><div></div><div></div>
+      </div>
+    </div>
+    <div class="sched-row">
+      <div class="sched-row__main">
+        <div class="sched-day">03 Engineering</div>
+        <div class="sched-time">Building reliable solutions.</div>
+        <div></div><div></div><div></div><div></div>
+      </div>
+    </div>
+    <div class="sched-row">
+      <div class="sched-row__main">
+        <div class="sched-day">04 Validation</div>
+        <div class="sched-time">Testing and optimization.</div>
+        <div></div><div></div><div></div><div></div>
+      </div>
+    </div>
+    <div class="sched-row">
+      <div class="sched-row__main">
+        <div class="sched-day">05 Deployment</div>
+        <div class="sched-time">Launch and monitoring.</div>
+        <div></div><div></div><div></div><div></div>
+      </div>
+    </div>
+    <div class="sched-row">
+      <div class="sched-row__main">
+        <div class="sched-day">06 Support</div>
+        <div class="sched-time">Ongoing maintenance and iteration.</div>
+        <div></div><div></div><div></div><div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ STUDIO METRICS ═══════════ -->
+<section class="practices" id="metrics">
+  <div class="grid-underlay"></div>
+  <div class="section-head fade-up">
+    <span class="section-label">Studio Metrics</span>
+    <h2 class="section-title">Our impact at a glance.</h2>
+  </div>
+  <div class="practices__grid fade-up delay-1">
+    <div class="practice"><div class="practice__num">15+</div><p class="practice__desc">Projects Delivered</p></div>
+    <div class="practice"><div class="practice__num">4</div><p class="practice__desc">Core Domains</p></div>
+    <div class="practice"><div class="practice__num">3</div><p class="practice__desc">Engineers</p></div>
+    <div class="practice"><div class="practice__num">100%</div><p class="practice__desc">Custom Solutions</p></div>
+  </div>
+</section>
+
+  <!-- ═══════════ INTAKE BLUEPRINT ═══════════ -->
+  <section class="signup" id="intake">
+    <div class="signup__inner">
+      <div class="signup__text fade-up">
+        <span class="section-label">04 // Project Queue Intake</span>
+        <h2 class="section-title">Initiate a baseline technical assessment, <em>fully vetted.</em></h2>
+        <p class="section-lead">We review exactly one architectural specification at a time to prevent core optimization
+          bloat. Secure your engineering allocation block immediately.</p>
+        <ul class="signup__list">
+          <li>Direct engineering feedback within 48 systemic hours</li>
+          <li>Explicit code performance mapping parameters</li>
+          <li>Zero high-intensity marketing metrics or tech jargon</li>
+        </ul>
+      </div>
+
+      <div class="signup__form-wrap fade-up delay-1" style="position:relative;">
+        <form class="signup__form" id="intakeForm">
+          <label>
+            <span>Identity / Engineering Unit</span>
+            <input type="text" placeholder="e.g. Core Infrastructure Corp" required>
+          </label>
+          <label>
+            <span>Secure Communication Return Route</span>
+            <input type="email" placeholder="e.g. operator@domain.com" required>
+          </label>
+          <label>
+            <span>Target Architecture Lane</span>
+            <select required>
+              <option value="" disabled selected>Select system domain...</option>
+              <option value="systems">Systems Automation &amp; Security</option>
+              <option value="fullstack">Full-Stack Infrastructure</option>
+              <option value="data">Data Pipelines &amp; Analytics</option>
+              <option value="multi">Multi-Domain Engagement</option>
+            </select>
+          </label>
+          <label>
+            <span>Estimated Project Scope</span>
+            <select>
+              <option value="" disabled selected>Select scope...</option>
+              <option value="consult">Architecture Consultation (1–2 weeks)</option>
+              <option value="sprint">Sprint Engagement (2–6 weeks)</option>
+              <option value="build">Full Build Cycle (2–4 months)</option>
+                <option value="retainer">Ongoing Retainer</option>
+              </select>
+            </label>
+            <label>
+              <span>Project Budget</span>
+              <select required>
+                <option value="" disabled selected>Budget range</option>
+                <option>Under $1k</option>
+                <option>$1k – $5k</option>
+                <option>$5k – $20k</option>
+                <option>$20k+</option>
+              </select>
+            </label>
+            <label>
+              <span>Timeline</span>
+              <select required>
+                <option value="" disabled selected>Select timeline</option>
+                <option>Immediate</option>
+                <option>1–3 Months</option>
+                <option>3–6 Months</option>
+                <option>Exploring</option>
+              </select>
+            </label>
+            <label>
+              <span>Project Type</span>
+              <select required>
+                <option value="" disabled selected>Select type</option>
+                <option>AI</option>
+                <option>Web Application</option>
+                <option>Blockchain</option>
+                <option>Mobile</option>
+                <option>Consultation</option>
+              </select>
+            </label>
+          <label>
+            <span>Technical Brief</span>
+            <textarea placeholder="Outline deployment constraints or runtime bottlenecks..." required></textarea>
+          </label>
+          <label>
+            <span>Existing Stack (optional)</span>
+            <input type="text" placeholder="e.g. AWS, React, PostgreSQL, Kubernetes">
+          </label>
+          <button type="submit" class="signup__btn" id="submitBtn">
+            <span>Inject System Blueprint</span>
+            <span class="arrow">→</span>
+          </button>
+          <p class="signup__note">Allocations are strict. Accepted builds pass directly to an isolated developer node
+            without external management middleware layers.</p>
+        </form>
+
+        <!-- Inline success state -->
+        <div class="signup__success" id="intakeSuccess">
+          <div class="signup__success-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+          </div>
+          <div class="signup__success-title">Blueprint Logged</div>
+          <div class="signup__success-sub">Your system specification has entered the transmission queue.<br>Expect a
+            structural assessment within 48 hours.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ FOOTER ═══════════ -->
+  <footer>
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <div class="footer-name">The Forge</div>
+        <p>Clean system architecture designed, audited, and compiled by three core engineering operators.</p>
+      <p>Independent engineering practice focused on AI systems, software platforms, and blockchain infrastructure.</p>
+      </div>
+      <div class="footer__col">
+        <h4>System Lanes</h4>
+        <ul>
+          <li>Systems Automation</li>
+          <li>Full-Stack Infrastructure</li>
+          <li>Data Pipelines</li>
+          <li class="em">Secure by Default</li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Active Projects</h4>
+        <ul>
+          <li>Sharp Engine</li>
+          <li>Saferoute Map</li>
+          <li>M-Blood Stream</li>
+          <li class="em">Zero-Trust Fabric</li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Contact Corridors</h4>
+        <ul>
+          <li>intake@theforge.net</li>
+          <li>sys.stream.local</li>
+          <li>Juja Node // Kenya</li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Studio Navigation</h4>
+        <ul>
+          <li><a href="#selected-work" class="link">Work</a></li>
+          <li><a href="#capabilities" class="link">Capabilities</a></li>
+          <li><a href="#team" class="link">Team</a></li>
+          <li><a href="#process" class="link">Process</a></li>
+          <li><a href="#intake" class="link">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Social Links</h4>
+        <ul>
+          <li><a href="https://github.com" target="_blank" class="link">GitHub</a></li>
+          <li><a href="https://linkedin.com" target="_blank" class="link">LinkedIn</a></li>
+          <li><a href="mailto:studio@theforge.net" class="link">Email</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__base">
+      <div>© 2026 THE FORGE ENGINEERING COLLECTIVE. CORE MATRIX LOGGED.</div>
+      <div>ZERO BLOAT // DETERMINISTIC COMPLEXITY</div>
+    </div>
+  </footer>
+
+  <!-- ═══════════ WIDGETS ═══════════ -->
+  <div class="breath-guide" id="breathGuide">
+    <div class="breath-orb"></div>
+    <div class="breath-info">
+      <span class="breath-label">System State</span>
+      <span class="breath-phase" id="breathPhase">Isolating Core...</span>
+    </div>
+  </div>
+
+  <div class="sound-toast" id="telemetryToast">
+    <div class="sound-toast__text">Engage real-time systemic terminal visualization?</div>
+    <div class="sound-toast__btns">
+      <button class="sound-toast__btn" id="toastAccept">Confirm</button>
+      <button class="sound-toast__btn secondary" id="toastDecline">Skip</button>
+    </div>
+  </div>
+
+  <!-- ═══════════ RUNTIME ═══════════ -->
+<script src="script.js"></script>
+</body>
+
+</html>
